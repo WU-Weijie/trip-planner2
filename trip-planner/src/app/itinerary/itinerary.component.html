@@ -9,8 +9,13 @@
       <mat-hint>Hint</mat-hint>
     </mat-form-field>
     </p> -->
+    <ul class="itineraries">
+      <li *ngFor="let event of events">
+        <app-itinerary-event>{{event}}</app-itinerary-event>
+      </li>
+    </ul>
   <mat-card-actions>
-
+    <button mat-raised-button color="primary" (click)="newEvent()">New Event</button>
   </mat-card-actions>
 
 </mat-card>

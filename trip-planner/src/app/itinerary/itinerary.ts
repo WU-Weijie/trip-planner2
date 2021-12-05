@@ -1,4 +1,4 @@
-
+import { ItineraryEvent } from './../itinerary-event/itinerary-event';
 
 export interface Itinerary {
   id: number;
@@ -6,5 +6,5 @@ export interface Itinerary {
   date?: Date;
   description?: string;
   hotel?: string;
-  events?: Event[];
+  events?: ItineraryEvent[];
 }

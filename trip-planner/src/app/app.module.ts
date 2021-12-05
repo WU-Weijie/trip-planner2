@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,6 @@ import { MatInputModule } from '@angular/material/input';
 import { TripComponent } from './trip/trip.component';
 import { PlanComponent } from './plan/plan.component';
 import { ItineraryComponent } from './itinerary/itinerary.component';
-import { EventComponent } from './event/event.component';
 import { ItineraryEventComponent } from './itinerary-event/itinerary-event.component';
 
 @NgModule({
@@ -27,10 +27,10 @@ import { ItineraryEventComponent } from './itinerary-event/itinerary-event.compo
     TripComponent,
     PlanComponent,
     ItineraryComponent,
-    EventComponent,
     ItineraryEventComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

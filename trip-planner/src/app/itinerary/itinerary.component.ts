@@ -15,4 +15,7 @@ export class ItineraryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  newEvent(): void {
+    this.events.push({} as ItineraryEvent);
+  }
 }

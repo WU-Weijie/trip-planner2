@@ -1,6 +1,6 @@
 export interface ItineraryEvent {
   name: string;
-  number: number;
+  id: number;
   location?: string;
   start_time?: Date;
   end_time?: Date;
