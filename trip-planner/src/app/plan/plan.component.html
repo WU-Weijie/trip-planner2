@@ -1,3 +1,8 @@
 <div class="plan-container">
-<button mat-raised-button color="primary">New Itineray</button>
+  <ul class="itineraries">
+    <li *ngFor="let itinerary of itineraries">
+      <app-itinerary>{{itinerary.id}}</app-itinerary>
+    </li>
+  </ul>
+  <button mat-raised-button color="primary" (click)="newItinerary()">New Itineray</button>
 </div>

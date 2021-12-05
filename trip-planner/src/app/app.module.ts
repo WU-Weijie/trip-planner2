@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { TripComponent } from './trip/trip.component';
 import { PlanComponent } from './plan/plan.component';
 import { ItineraryComponent } from './itinerary/itinerary.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ItineraryComponent } from './itinerary/itinerary.component';
     NavComponent,
     TripComponent,
     PlanComponent,
-    ItineraryComponent
+    ItineraryComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
