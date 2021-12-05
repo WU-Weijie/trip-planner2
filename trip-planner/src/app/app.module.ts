@@ -12,10 +12,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { TripComponent } from './trip/trip.component';
 import { PlanComponent } from './plan/plan.component';
 import { ItineraryComponent } from './itinerary/itinerary.component';
 import { EventComponent } from './event/event.component';
+import { ItineraryEventComponent } from './itinerary-event/itinerary-event.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { EventComponent } from './event/event.component';
     TripComponent,
     PlanComponent,
     ItineraryComponent,
-    EventComponent
+    EventComponent,
+    ItineraryEventComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,9 @@ import { EventComponent } from './event/event.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
