@@ -11,13 +11,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 import { TripComponent } from './trip/trip.component';
+import { PlanComponent } from './plan/plan.component';
+import { ItineraryComponent } from './itinerary/itinerary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    TripComponent
+    TripComponent,
+    PlanComponent,
+    ItineraryComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,8 @@ import { TripComponent } from './trip/trip.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
