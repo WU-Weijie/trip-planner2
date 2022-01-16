@@ -14,11 +14,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { TripComponent } from './trip/trip.component';
 import { PlanComponent } from './plan/plan.component';
 import { ItineraryComponent } from './itinerary/itinerary.component';
 import { ItineraryEventComponent } from './itinerary-event/itinerary-event.component';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -42,9 +44,11 @@ import { ItineraryEventComponent } from './itinerary-event/itinerary-event.compo
     MatListModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
