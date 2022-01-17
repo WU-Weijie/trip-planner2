@@ -1,6 +1,8 @@
 ul li {
   list-style-type: none;
   padding-bottom: 12px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .itinerary-container {
@@ -8,4 +10,9 @@ ul li {
   // padding-right: 30%;
   margin: auto;
   width: 800px;
+}
+
+button#add-itinerary {
+  display: block;
+  margin: auto;
 }
